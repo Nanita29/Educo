@@ -17,6 +17,7 @@
         case "listar_x_usu":
             $datos=$ticket->listar_ticket_x_usu($_POST["usu_id"]);
             $data= Array();
+            date_default_timezone_set('America/Mexico_City');
             foreach($datos as $row){
                 $sub_array = array();
                 $sub_array[] = $row["tick_id"];
