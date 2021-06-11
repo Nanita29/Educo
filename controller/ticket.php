@@ -21,8 +21,8 @@
             foreach($datos as $row){
                 $sub_array = array();
                 $sub_array[] = $row["tick_id"];
-                $sub_array[] = $row["cat_nom"];
                 $sub_array[] = $row["tick_titulo"];
+                $sub_array[] = $row["tick_descrip"];
 
                 if ($row["tick_estado"]=="Abierto"){
                     $sub_array[] = '<span class="label label-pill label-success">Abierto</span>';
